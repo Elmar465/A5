@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Your Name - Product Registration</title>
+    <!-- Add your CSS file link here -->
+    <script src="product_register.js"></script> <!-- Link to the external JavaScript file -->
+    <link rel="stylesheet" href="sytle.css">
+</head>
+
+<body>
+    <header>
+        <!-- Your header content here -->
+    </header>
+
+    <nav>
+        <!-- Your navigation content here -->
+    </nav>
+
+    <main>
+        <h1>Product Registration</h1>
+        <form id="productForm" action="https://httpbin.org/post" method="post" onsubmit="return validateForm()">
+            <!-- Product ID -->
+            <label for="productId">Product ID:</label>
+            <input type="text" id="productId" name="productId" required pattern="\d{8}"
+                title="Product ID must be 8 digits long (e.g., 44455599)">
+
+
+            <!-- Description -->
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <!-- Price -->
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" required min="0" step="0.01">
+
+            <!-- Supplier Username -->
+            <label for="supplierUsername">Supplier Username:</label>
+            <input type="text" id="supplierUsername" name="supplierUsername" required>
+
+            <!-- Supplier Status -->
+            <label for="supplierStatus">Supplier Status:</label>
+            <select id="supplierStatus" name="supplierStatus" required>
+                <option value="">Select Status</option>
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+            </select>
+
+            <!-- Supplier Email -->
+            <label for="supplierEmail">Supplier Email:</label>
+            <input type="email" id="supplierEmail" name="supplierEmail" required>
+
+            <!-- Hidden Fields -->
+            <input type="hidden" name="fullName" value="Your Full Name">
+            <input type="hidden" name="studentId" value="Your Student ID">
+
+            <!-- Submit and Reset Buttons -->
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </main>
+
+    <footer>
+        <!-- Your footer content here -->
+        <p>GitHub Link: <a href="Your GitHub Link">Your GitHub Profile</a></p>
+    </footer>
+</body>
+
+</html>
