@@ -10,11 +10,9 @@
 
 <body>
     <header>
-        <!-- Your header content here -->
     </header>
 
     <nav>
-        <!-- Your navigation content here -->
     </nav>
 
     <main>
@@ -39,20 +37,20 @@
             <input type="text" id="supplierUsername" name="supplierUsername" required>
 
             <!-- Supplier Status -->
-            <label for="supplierStatus">Supplier Status:</label>
-            <select id="supplierStatus" name="supplierStatus" required>
-                <option value="">Select Status</option>
-                <option value="active">Active</option>
-                <option value="inactive">Inactive</option>
-            </select>
+            <fieldset>
+                <legend>Supplier Status:</legend>
+                <label><input type="checkbox" name="supplierStatus" value="New Supplier"> New Supplier</label>
+                <label><input type="checkbox" name="supplierStatus" value="Contract Signed"> Contract Signed</label>
+                <label><input type="checkbox" name="supplierStatus" value="Quality Tested"> Quality Tested</label>
+            </fieldset>
 
             <!-- Supplier Email -->
             <label for="supplierEmail">Supplier Email:</label>
             <input type="email" id="supplierEmail" name="supplierEmail" required>
 
             <!-- Hidden Fields -->
-            <input type="hidden" name="fullName" value="Your Full Name">
-            <input type="hidden" name="studentId" value="Your Student ID">
+            <input type="hidden" name="fullName" value="Elmar Jafarli">
+            <input type="hidden" name="studentId" value="162895221">
 
             <!-- Submit and Reset Buttons -->
             <input type="submit" value="Submit">
@@ -62,7 +60,7 @@
 
     <footer>
         <!-- Your footer content here -->
-        <p>GitHub Link: <a href="Your GitHub Link">Your GitHub Profile</a></p>
+        <p>GitHub Link: <a href="https://github.com/Elmar465/A5">Your GitHub Profile</a></p>
     </footer>
 </body>
 
