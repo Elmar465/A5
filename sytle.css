@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
 body {
     font-family: Arial, sans-serif;
 }
@@ -6,15 +13,37 @@ header, nav, main, footer {
     margin: 0;
     padding: 1em;
 }
-
 nav {
     background-color: #f0f0f0;
     /* Add more styles for navigation */
+}
+header p {
+    color: black;
+    display: flex;
 }
 
 main {
     background-color: #ffffff;
     padding: 20px;
+}
+header ul {
+    list-style-type:lower-alpha;
+    /* border: 1px solid; */
+    padding: 0;
+}
+
+header li {
+    display: inline; /* Or 'block' for vertical list */
+    margin-right: 10px;
+}
+
+header a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #ff0000;
 }
 
 form {
@@ -78,7 +107,3 @@ form input[type="reset"]:hover {
     display: none; /* Hidden by default */
 }
 
-footer {
-    background-color: #f0f0f0;
-    /* Add more styles for footer */
-}
