@@ -21,7 +21,9 @@ header p {
     color: black;
     display: flex;
 }
-
+header {
+    display: flex;
+}
 main {
     background-color: #ffffff;
     padding: 20px;
