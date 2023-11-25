@@ -9,23 +9,30 @@ body {
     font-family: Arial, sans-serif;
 }
 
-header, nav, main, footer {
-    margin: 0;
-    padding: 1em;
-}
-nav {
-    background-color: #f0f0f0;
-    /* Add more styles for navigation */
-}
 header p {
     color: black;
     display: flex;
 }
-header {
-    display: flex;
+h1 {
+    color: #444;
+    text-align: center;
 }
+
+h2 {
+    color: #333;
+    margin-top: 1em;
+}
+
+p {
+    margin: 0.75em 0;
+}
+
 main {
     background-color: #ffffff;
+    padding: 20px;
+}
+header {
+    background-color: lightblue;
     padding: 20px;
 }
 header ul {
@@ -40,7 +47,7 @@ header li {
 }
 
 header a {
-    color: #4CAF50;
+    color: black;
     text-decoration: none;
 }
 
